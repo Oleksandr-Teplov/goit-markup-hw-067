@@ -6,8 +6,13 @@
 --logo-txt-color:#404BBF;
 --footer-text:#E7E9FC;
 --footer-logo:#F4F4FD;
+--border: #E7E9FC;
 }
-
+ul, h1, h2, h3 , h4, h5, p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 body {
 font-family: 'Roboto', sans-serif;
 color: var(--main-text-color);
@@ -18,7 +23,22 @@ list-style: none;
 .link{
 text-decoration: none;
 }
-.header-navigation {
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.navigation {
+    display: flex;
+   align-items: center;
+}
+.main-nav {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-right: 330px;
 }
 .header-logo, .header-web {
 font-family: 'Raleway', sans-serif;
@@ -29,7 +49,10 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--main-text-color);
 }
-.header-navigation .header-web{
+.header-logo {
+margin-right: 75px;
+}
+.header-web{
 color: var(--button-color);
 }
 
@@ -39,14 +62,37 @@ font-size: 16px;
 line-height: 1.50;
 letter-spacing: 0.02em;
 }
-
-.list-link {
+.site-nav {
+    display: flex;
+    text-align: center;
+}
+.site-nav .list-link {
+display: block;
+padding-top: 24px;
+padding-bottom: 24px;
 font-weight: 600;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em; 
+
 color: var(--main-text-color);
+
+
 }
+.site-nav .list-item + .list-item {
+margin-left: 40px;
+}
+.auth-nav {
+display: flex;
+text-align: center;
+margin-left: auto;
+
+
+}
+.tell-numer {
+    margin-left: 40px;
+}
+
 
 .list-link:hover,
 .mail:hover, 
@@ -74,10 +120,15 @@ clip-path: inset(50%);
 margin: -1px;
 }
 .main-box{
+text-align: center;
 background: var(--main-text-color);
 
 }
 .main-title {
+margin-bottom: 65px;
+padding-top: 190px;  
+padding-left: 470px;
+padding-right: 470px;
 font-weight: 600;
 font-size: 56px;
 line-height: 1.07;
@@ -86,7 +137,10 @@ letter-spacing: 0.02em;
 color: #FFFFFF;
 
 }
+
 .button {
+margin-bottom: 190px;
+    padding: 16px 32px;
 font-family: inherit;
 font-weight: 600;
 font-size: 16px;
@@ -94,9 +148,10 @@ line-height: 1.18;
 letter-spacing: 0.04em;
 color: var(--white-color);
 background: var(--button-color);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+box-shadow: var(--box-shadow)
 border-radius: 4px;
 cursor: pointer;
+
 }
 .button:hover, 
 .button:focus{
@@ -107,15 +162,31 @@ line-height: 1.18;
 letter-spacing: 0.04em;
 color: var(--white-color);
 background: var(--logo-txt-color);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+box-shadow: var(--box-shadow);
 border-radius: 4px;
 cursor: pointer;
+padding: 16px 32px;
 }
 
 
 /*----- SECTION MISSION -----*/
 
+.mission-title-list {
+display: flex;
+text-wrap:wrap;
+margin-top: 120px;
+margin-bottom: 120px;
+}
+.mission-item
+{
+max-width: 265px;
+}
+.mission-item + .mission-item {
+    margin-left: 25px;
+}
+
 .mission-title {
+    margin-bottom: 10px;
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
@@ -129,17 +200,30 @@ color: var(--second-text-color);
 }
 /*-----SECTION JOB-----*/
 .job-header {
-   
+   margin-bottom: 70px;
+   text-align: center;
 font-weight: 600;
 font-size: 36px;
 line-height: 1.11;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 }
-
+.job-list {
+    display: flex;
+    margin-bottom: 120px;
+}
+.job-list .job-item + .job-item {
+margin-left: 25px;
+align-self: center;
+}
 /*-----SECTION TEAM-----*/
 .team{
 background-color: var(--footer-logo);
+}
+.our-team-title {
+text-align: center;
+padding-top: 120px;
+padding-bottom: 70px;
 }
 .our-team-title {
 font-weight: 600;
@@ -149,18 +233,29 @@ letter-spacing: 0.02em;
 text-transform: capitalize;
 }
 .team-list {
+    display: flex;
 }
 .team-item {
+    margin-bottom: 120px;
+    background: var(--white-color);
+    text-align: center;
+}
+.team-item + .team-item{
+    margin-left: 24px;
 }
 .team-image {
 }
 .team-title {
+margin-top: 30px;
+margin-bottom: 8px;
+
 font-weight: 500;
 font-size: 20px;
 line-height: 1.20;
 letter-spacing: 0.02em;
 }
 .team-text {
+padding-bottom: 32px;
 font-size: 16px;
 line-height: 1.50;
 letter-spacing: 0.02em;
@@ -168,7 +263,11 @@ color: var(--second-text-color);
 }
 /* ----FOOTER---- */
 
-
+.footer{
+    padding-top: 100px;
+    padding-bottom: 100px;
+background-color: var(--main-text-color);
+}
 .footer-logo{
 font-family: 'Raleway';
 font-style: normal;
@@ -187,10 +286,10 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--button-color);
 }
-.footer{
-background-color: var(--main-text-color);
-}
+
 .footer-text{
+    width: 264px;
+    margin-top: 16px;
 font-family: 'Roboto', sans-serif;
 font-style: normal;
 font-weight: 400;
@@ -203,8 +302,20 @@ color: var(--footer-text);
 /* ----PORTFOLIO PAGE----- */
 
 /* FILTERS */
-
+.border-btm {
+    border-bottom: 1px solid var(--border);
+}
+.nav-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 95px;
+    margin-bottom: 85px;
+}
+.filter-item + .filter-item {
+    margin-left: 24px;
+}
 .filter-btn {
+    padding: 12px 24px;
     font-family: inherit;
     font-weight: 600;
     font-size: 16px;
@@ -212,7 +323,9 @@ color: var(--footer-text);
     letter-spacing: 0.04em;
     background: var(--footer-logo);
     color: var(--button-color);
-    cursor: pointer;
+border: 1px solid var(--border);
+border-radius: 4px;
+cursor: pointer;
     }
 .filter-btn:hover,
 .filter-btn:focus{
@@ -228,6 +341,7 @@ color: var(--footer-text);
 /*------ SECTION FILTERS---- */
 
 .filters-title{
+    margin-top: 30px;
 font-weight: 500;
 font-size: 20px;
 line-height: 1.20;
@@ -235,8 +349,31 @@ letter-spacing: 0.02em;
 color: var(--main-text-color);
 }
 .filters-text{
+margin-top: 10px;
+margin-bottom: 30px;
 font-size: 16px;
 line-height: 1.50;
 letter-spacing: 0.02em;
 color: var(--second-text-color);
+}
+/*==== PORTFOLIOS==== */
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+.portfolio-item {
+    width: ((100%-48px)/3);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background: var(--white-color);
+    border: 1px solid var(--border);
+}
+.portfolio-item:nth-child(3n) {
+    margin-right: 0;
+}
+.portfolio-item:nth-last-child(-n+3) {
+    margin-bottom: 0;
 }
