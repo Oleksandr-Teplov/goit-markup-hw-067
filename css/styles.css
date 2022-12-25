@@ -1,0 +1,242 @@
+:root{
+--white-color:#ffffff;
+--main-text-color:#2E2F42;
+--second-text-color:#434455;
+--button-color:#4D5AE5;
+--logo-txt-color:#404BBF;
+--footer-text:#E7E9FC;
+--footer-logo:#F4F4FD;
+}
+
+body {
+font-family: 'Roboto', sans-serif;
+color: var(--main-text-color);
+}
+.list{
+list-style: none;
+}
+.link{
+text-decoration: none;
+}
+.header-navigation {
+}
+.header-logo, .header-web {
+font-family: 'Raleway', sans-serif;
+font-weight: 800;
+font-size: 18px;
+line-height: 1.33;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--main-text-color);
+}
+.header-navigation .header-web{
+color: var(--button-color);
+}
+
+.header-link {
+font-weight: 600;
+font-size: 16px;
+line-height: 1.50;
+letter-spacing: 0.02em;
+}
+
+.list-link {
+font-weight: 600;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em; 
+color: var(--main-text-color);
+}
+
+.list-link:hover,
+.mail:hover, 
+.mail:focus, 
+.tell-numer:hover, 
+.tell-numer:focus {
+color: var(--logo-txt-color);
+}
+.mail, .tell-numer {
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--second-text-color);
+    }
+.visually-hidden {
+position: absolute;
+white-space: nowrap;
+width: 1px;
+height: 1px;
+overflow: hidden;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+clip-path: inset(50%);
+margin: -1px;
+}
+.main-box{
+background: var(--main-text-color);
+
+}
+.main-title {
+font-weight: 600;
+font-size: 56px;
+line-height: 1.07;
+text-align: center;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+
+}
+.button {
+font-family: inherit;
+font-weight: 600;
+font-size: 16px;
+line-height: 1.18;
+letter-spacing: 0.04em;
+color: var(--white-color);
+background: var(--button-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+cursor: pointer;
+}
+.button:hover, 
+.button:focus{
+font-family: inherit;
+font-weight: 600;
+font-size: 16px;
+line-height: 1.18;
+letter-spacing: 0.04em;
+color: var(--white-color);
+background: var(--logo-txt-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+cursor: pointer;
+}
+
+
+/*----- SECTION MISSION -----*/
+
+.mission-title {
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+}
+.mission-text {
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--second-text-color);
+}
+/*-----SECTION JOB-----*/
+.job-header {
+   
+font-weight: 600;
+font-size: 36px;
+line-height: 1.11;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+}
+
+/*-----SECTION TEAM-----*/
+.team{
+background-color: var(--footer-logo);
+}
+.our-team-title {
+font-weight: 600;
+font-size: 36px;
+line-height: 1.11;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+}
+.team-list {
+}
+.team-item {
+}
+.team-image {
+}
+.team-title {
+font-weight: 500;
+font-size: 20px;
+line-height: 1.20;
+letter-spacing: 0.02em;
+}
+.team-text {
+font-size: 16px;
+line-height: 1.50;
+letter-spacing: 0.02em;
+color: var(--second-text-color);
+}
+/* ----FOOTER---- */
+
+
+.footer-logo{
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 1.18;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--footer-logo);
+}
+.footer-web{
+font-weight: 800;
+font-size: 18px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--button-color);
+}
+.footer{
+background-color: var(--main-text-color);
+}
+.footer-text{
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.50;
+letter-spacing: 0.02em;
+color: var(--footer-text);
+}
+
+/* ----PORTFOLIO PAGE----- */
+
+/* FILTERS */
+
+.filter-btn {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.50;
+    letter-spacing: 0.04em;
+    background: var(--footer-logo);
+    color: var(--button-color);
+    cursor: pointer;
+    }
+.filter-btn:hover,
+.filter-btn:focus{
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.50;
+    letter-spacing: 0.04em;
+    background: var(--button-color);
+    color: var(--white-color);
+}
+
+/*------ SECTION FILTERS---- */
+
+.filters-title{
+font-weight: 500;
+font-size: 20px;
+line-height: 1.20;
+letter-spacing: 0.02em;
+color: var(--main-text-color);
+}
+.filters-text{
+font-size: 16px;
+line-height: 1.50;
+letter-spacing: 0.02em;
+color: var(--second-text-color);
+}
