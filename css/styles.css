@@ -42,9 +42,7 @@ body {
 }
 .main-nav {
   display: flex;
-  text-align: center;
   align-items: center;
-  margin-right: 330px;
 }
 .header-logo,
 .header-web {
@@ -89,10 +87,9 @@ body {
 }
 .auth-nav {
   display: flex;
-  text-align: center;
   margin-left: auto;
 }
-.tell-numer {
+.tell-item {
   margin-left: 40px;
 }
 
@@ -123,24 +120,25 @@ body {
   margin: -1px;
 }
 .main-box {
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   background: var(--main-text-color);
+
 }
 .main-title {
   margin-bottom: 65px;
-  padding-top: 190px;
-  padding-left: 470px;
-  padding-right: 470px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 496px;
   font-weight: 600;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
 }
 
 .button {
-  margin-bottom: 190px;
   padding: 16px 32px;
   font-family: inherit;
   font-weight: 600;
@@ -150,9 +148,9 @@ body {
   color: var(--white-color);
   background: var(--button-color);
   box-shadow: var(--box-shadow);
+  border: none;
   border-radius: 4px;
   cursor: pointer;
-  padding: 16px 32px;
 }
 .button:hover,
 .button:focus {
@@ -170,12 +168,14 @@ body {
 }
 
 /*----- SECTION MISSION -----*/
-
+.mission {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .mission-title-list {
   display: flex;
   text-wrap: wrap;
-  margin-top: 120px;
-  margin-bottom: 120px;
+
 }
 .mission-item {
   max-width: 265px;
@@ -198,6 +198,9 @@ body {
   color: var(--second-text-color);
 }
 /*-----SECTION JOB-----*/
+.job {
+  padding-bottom: 120px;
+}
 .job-header {
   margin-bottom: 70px;
   text-align: center;
@@ -209,15 +212,16 @@ body {
 }
 .job-list {
   display: flex;
-  margin-bottom: 120px;
 }
 .job-list .job-item + .job-item {
-  margin-left: 25px;
+  margin-left: 24px;
   align-self: center;
 }
 /*-----SECTION TEAM-----*/
 .team {
   background-color: var(--footer-logo);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .team-item > img {
@@ -225,8 +229,7 @@ body {
 }
 .our-team-title {
   text-align: center;
-  padding-top: 120px;
-  padding-bottom: 70px;
+  margin-bottom: 70px;
 
   font-weight: 600;
   font-size: 36px;
@@ -240,12 +243,11 @@ body {
 .team-description {
   padding-top: 32px;
   padding-bottom: 32px;
-  margin-bottom: 120px;
   background: var(--white-color);
   text-align: center;
 }
 .team-item + .team-item {
-  margin-left: 20px;
+  margin-left: 24px;
 }
 .team-image {
 }
@@ -290,8 +292,6 @@ body {
 .footer-text {
   width: 264px;
   margin-top: 16px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -308,7 +308,6 @@ body {
 .nav-btn {
   display: flex;
   justify-content: center;
-  margin-top: 95px;
   margin-bottom: 85px;
 }
 .filter-item + .filter-item {
@@ -339,18 +338,19 @@ body {
 }
 
 /*==== PORTFOLIOS==== */
-
 .portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 120px;
 }
 
 .portfolio-link {
-  width: ((100%-48px)/3);
-  margin-right: 20px;
-  margin-bottom: 20px;
+  width: calc((100% - 48px) / 3);
+  margin-right: 24px;
+  margin-bottom: 48px;
   background: var(--white-color);
 }
 .portfolio-item {
