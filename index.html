@@ -14,7 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"/>
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -25,9 +26,11 @@
           >
           <ul class="site-nav list">
             <li class="list-item">
-              <div class="display-current-page">          
-   <a class="list-link link current-page" href="./index.html">Studio</a>
-  </div>
+              <div class="display-current-page">
+                <a class="list-link link current-page" href="./index.html"
+                  >Studio</a
+                >
+              </div>
             </li>
             <li class="list-item">
               <a class="list-link link" href="./portfolio.html">Portfolio</a>
@@ -55,30 +58,27 @@
     <main>
       <section class="main-box">
         <h1 class="main-title">Effective Solutions for Your Business</h1>
-        <button class="button" type="button" id="myBtn">Order Service</button>
+        <button class="button" type="button" data-modal-open >
+          Order Service
+        </button>
         <!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p> text text text </p>
-  </div>
-
-</div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button class="modal-close" data-modal-close >&times</button>
+          </div>
+        </div>
       </section>
 
-     
-        <section class="mission">
-          <div class="container">
+      <section class="mission">
+        <div class="container">
           <h2 class="mission-header visually-hidden">Our Mission</h2>
           <ul class="mission-title-list">
             <li class="mission-item list">
-<div class="mission-icon">
+              <div class="mission-icon">
                 <svg class="icon-svg">
                   <use href="./images/sprite.svg#antenna"></use>
                 </svg>
-</div>
+              </div>
               <h3 class="mission-title">Strategy</h3>
               <p class="mission-text">
                 Our goal is to identify the business problem to walk away with
@@ -90,7 +90,7 @@
                 <svg class="icon-svg">
                   <use href="./images/sprite.svg#clock"></use>
                 </svg>
-</div>
+              </div>
               <h3 class="mission-title">Punctuality</h3>
               <p class="mission-text">
                 Bring the key message to the brand's audience for the best price
@@ -102,7 +102,7 @@
                 <svg class="icon-svg">
                   <use href="./images/sprite.svg#diagram"></use>
                 </svg>
-</div>
+              </div>
               <h3 class="mission-title">Diligence</h3>
               <p class="mission-text">
                 Research and confirm brands that present the strongest digital
@@ -114,17 +114,16 @@
                 <svg class="icon-svg">
                   <use href="./images/sprite.svg#astronaut"></use>
                 </svg>
-</div>
+              </div>
               <h3 class="mission-title">Technologies</h3>
               <p class="mission-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
             </li>
-          </ul> 
+          </ul>
         </div>
-        </section>
-     
+      </section>
 
       <section class="job">
         <div class="container">
@@ -177,7 +176,6 @@
                 <p class="team-text">Product Designer</p>
 
                 <ul class="social-item">
-
                   <li class="social-list">
                     <a class="social-link" href="">
                       <svg class="social-icon">
@@ -220,7 +218,6 @@
                 <h3 class="team-title">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
                 <ul class="social-item">
-
                   <li class="social-list">
                     <a class="social-link" href="">
                       <svg class="social-icon">
@@ -250,7 +247,6 @@
                     </a>
                   </li>
                 </ul>
-
               </div>
             </li>
             <li class="team-item">
@@ -264,7 +260,6 @@
                 <h3 class="team-title">Camila Garcia</h3>
                 <p class="team-text">Marketing</p>
                 <ul class="social-item">
-
                   <li class="social-list">
                     <a class="social-link" href="">
                       <svg class="social-icon">
@@ -294,7 +289,6 @@
                     </a>
                   </li>
                 </ul>
-
               </div>
             </li>
             <li class="team-item">
@@ -308,7 +302,6 @@
                 <h3 class="team-title">Daniel Wilson</h3>
                 <p class="team-text">UI Designer</p>
                 <ul class="social-item">
-
                   <li class="social-list">
                     <a class="social-link" href="">
                       <svg class="social-icon">
@@ -338,7 +331,6 @@
                     </a>
                   </li>
                 </ul>
-
               </div>
             </li>
           </ul>
@@ -347,134 +339,104 @@
 
       <section class="customer">
         <div class="container">
-
           <h2 class="customer-title">Customers</h2>
 
           <ul class="customer-list">
             <li class="customer-item">
               <a class="customer-link" href="">
-                <svg class="customer-icon" width="104px", height="56px">
+                <svg class="customer-icon" width="104px" , height="56px">
                   <use href="./images/sprite.svg#logo-1"></use>
                 </svg>
               </a>
             </li>
             <li class="customer-item">
               <a class="customer-link" href="">
-                <svg class="customer-icon" width="104px", height="56px">
+                <svg class="customer-icon" width="104px" , height="56px">
                   <use href="./images/sprite.svg#logo-2"></use>
                 </svg>
               </a>
             </li>
             <li class="customer-item">
               <a class="customer-link" href="">
-                <svg class="customer-icon" width="104px", height="56px">
+                <svg class="customer-icon" width="104px" , height="56px">
                   <use href="./images/sprite.svg#logo-3"></use>
                 </svg>
               </a>
             </li>
             <li class="customer-item">
               <a class="customer-link" href="">
-                <svg class="customer-icon" width="104px", height="56px">
+                <svg class="customer-icon" width="104px" , height="56px">
                   <use href="./images/sprite.svg#logo-4"></use>
                 </svg>
               </a>
             </li>
             <li class="customer-item">
               <a class="customer-link" href="">
-                <svg class="customer-icon" width="104px", height="56px">
+                <svg class="customer-icon" width="104px" , height="56px">
                   <use href="./images/sprite.svg#logo-5"></use>
                 </svg>
               </a>
             </li>
             <li class="customer-item">
               <a class="customer-link" href="">
-                <svg class="customer-icon" width="104px", height="56px">
+                <svg class="customer-icon" width="104px" , height="56px">
                   <use href="./images/sprite.svg#logo-6"></use>
                 </svg>
               </a>
             </li>
           </ul>
-
         </div>
       </section>
     </main>
 
     <footer class="footer">
-<div class="container media-box" >
-  <div class="footer-media">
+      <div class="container media-box">
+        <div class="footer-media">
           <a class="footer-logo link" href="./index.html">
-            <span class="footer-web">web</span>studio</a>
+            <span class="footer-web">web</span>studio</a
+          >
           <p class="footer-text">
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
           </p>
-</div>
-      
-      <div class="social-media">
-<b>        <h3 class="media-title">Social media</h3></b>
-        <ul class="media-list">
-          <li class="media-item">
-            <a class="media-link" href="">
-              <svg class="media-icon">
-                <use href="./images/sprite.svg#instagram"></use>
-              </svg>
-</a>
-          </li>
-          <li class="media-item">
-            <a class="media-link" href="">
-              <svg class="media-icon">
-                <use href="./images/sprite.svg#twitter"></use>
-              </svg>
-</a>
-          </li>
-          <li class="media-item">
-            <a class="media-link" href="">
-              <svg class="media-icon">
-                <use href="./images/sprite.svg#facebook"></use>
-              </svg>
-</a>
-          </li>
-          <li class="media-item">
-            <a class="media-link" href="">
-              <svg class="media-icon">
-                <use href="./images/sprite.svg#linkedin"></use>
-              </svg>
-</a>
-          </li>
-        </ul>
+        </div>
+
+        <div class="social-media">
+          <b> <h3 class="media-title">Social media</h3></b>
+          <ul class="media-list">
+            <li class="media-item">
+              <a class="media-link" href="">
+                <svg class="media-icon">
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="media-item">
+              <a class="media-link" href="">
+                <svg class="media-icon">
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="media-item">
+              <a class="media-link" href="">
+                <svg class="media-icon">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="media-item">
+              <a class="media-link" href="">
+                <svg class="media-icon">
+                  <use href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
 
-    <script>
-      // Get the modal
-      var modal = document.getElementById("myModal");
-      
-      // Get the button that opens the modal
-      var btn = document.getElementById("myBtn");
-      
-      // Get the <span> element that closes the modal
-      var span = document.getElementsByClassName("close")[0];
-      
-      // When the user clicks the button, open the modal 
-      btn.onclick = function() {
-        modal.style.display = "block";
-      }
-      
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function() {
-        modal.style.display = "none";
-      }
-      
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      }
-      </script>
-
-    
+    <script src="./modal.js"></script>
   </body>
-
 </html>
