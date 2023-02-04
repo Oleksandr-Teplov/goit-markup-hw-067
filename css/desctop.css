@@ -1,0 +1,186 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+  }
+
+  .header-logo {
+    margin-right: 75px;
+  }
+
+  .site-nav {
+    display: flex;
+    text-align: center;
+  }
+
+  .auth-nav {
+    margin-left: auto;
+  }
+
+  .tell-item {
+    margin-left: 40px;
+    position: relative;
+  }
+  div > .mobile-menu, .heder-menu-button {
+    display: none;
+  }
+  .main-box {
+    /* margin-left: auto; */
+    min-width: 1440px;
+    height: 600px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office\ 1.jpg);
+  }
+
+  .main-title {
+    margin-bottom: 65px;
+  padding-left: 0;
+  padding-right: 0;
+    width: 496px;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.07;
+  }
+
+  .modal {
+    width: 408px;
+    }
+
+  /*----- SECTION MISSION -----*/
+  .mission {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .mission-title-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .mission-item {
+    max-width: 265px;
+  }
+  .mission-text {
+    margin-bottom: 0;
+  }
+  /* .mission-item + .mission-item {
+    margin-left: 24px;
+  } */
+
+  .mission-icon {
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f4f4fd;
+    border-radius: 4px;
+
+    margin-bottom: 8px;
+  }
+
+  .icon-svg {
+    width: 60px;
+    height: 64px;
+  }
+  .mission-title {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+  .mission-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
+  }
+  /*-----SECTION JOB-----*/
+  .job {
+    display: block;
+    margin-bottom: 120px;
+  }
+
+  .job-header {
+    margin-bottom: 70px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+  }
+  .job-list {
+    display: flex;
+  }
+  .job-list .job-item + .job-item {
+    margin-left: 24px;
+    align-self: center;
+  }
+  /*-----SECTION TEAM-----*/
+
+  .our-team-title {
+    text-align: center;
+    padding-top: 120px;
+    margin-bottom: 70px;
+  }
+  .team-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 110px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .team-item + .team-item {
+    margin-left: 24px;
+  }
+
+  /* =======CUSTOMERS====== */
+  .customer {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .customer-list {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+  .customer-item {
+    width: calc((100% - 120px) / 6);
+  }
+
+  .customer-item + .customer-item {
+    margin-left: 24px;
+  }
+
+  /* ----FOOTER---- */
+
+  .media-box {
+    display: flex;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .subscribe {
+    margin: 0;
+  }
+  .footer-media {
+    margin-right: 120px;
+  }
+  .social-media {
+    margin-right: 72px;
+  }
+
+
+
+  
+}

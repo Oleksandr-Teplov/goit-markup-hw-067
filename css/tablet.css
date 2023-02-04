@@ -1,0 +1,203 @@
+@media screen and (min-width: 768px) {
+    .container {
+        /* width: 768px; */
+        max-width: 768px;
+      }
+
+    .border-btm {
+        border-bottom: 1px solid #e7e9fc;
+        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+          0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+      }
+      div > .mobile-menu, .heder-menu-button {
+        display: none;
+      }
+      .main-box {
+        max-width: 768px;
+        height: 43px;
+      }
+      
+      .header-link {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+      }
+      .header-logo {
+        margin-right: 123px;
+      }
+      .main-nav {
+        margin-right: 86px;
+      }
+      .site-nav {
+        display: flex;
+        text-align: center;
+      }
+      .site-nav .list-link {
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+      
+        color: var(--main-text-color);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      
+      .site-nav .list-item + .list-item {
+        margin-left: 40px;
+      }
+
+      .auth-nav {
+        display: flex;
+        flex-wrap: wrap;
+      }
+   
+      
+      .list-link:hover,
+      .mail:hover,
+      .mail:focus,
+      .tell-numer:hover,
+      .tell-numer:focus {
+        color: var(--logo-txt-color);
+      }
+      
+      .mail,
+      .tell-numer {
+        font-style: normal;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--second-text-color);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      
+      .display-current-page {
+        position: relative;
+      }
+      .site-nav .current-page {
+        color: var(--logo-txt-color);
+      }
+      
+      .current-page::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 4px;
+        left: 0px;
+        bottom: 0px;
+      
+        background: var(--logo-txt-color);
+        border-radius: 2px;
+      }
+      /* =================MAIN BOX============= */
+
+      .main-box {
+        width: 768px;
+        height: 436px;
+        background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-tablet.jpg);
+      }
+
+/*----- SECTION MISSION -----*/
+.mission {
+    padding-top: 96px;
+    padding-bottom: 24px;
+  }
+  .mission-title-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .mission-item {
+      text-align: left;
+    width: calc((100% - 16px) / 2);
+  }
+
+.mission-title {
+ text-align: left;
+
+}
+/*-----SECTION TEAM-----*/
+
+.team-list {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    padding-left: 93px;
+    padding-right: 93px;
+
+  }
+
+  .team-item {
+    margin-top: 64px;
+    }
+
+
+      /* =======CUSTOMERS====== */
+.customer-list {
+
+  padding-left: 93px;
+  padding-right: 93px;
+  justify-content: space-between;
+        align-items: center;
+      } 
+.customer-link {
+  width: 168px; 
+      }
+.customer-item {
+  width: calc((100% - 48px) / 3);
+      }
+
+/* ----FOOTER---- */
+
+
+.media-box {
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-left: 93px;
+  padding-right: 93px;
+}
+
+.social-media {
+  padding: 0 0 0 24px;
+}
+.media-title {
+
+  text-align: left;
+}
+.subscribe {
+  margin-top: 72px;
+  margin-left: 0;
+}
+.subscribe-input {
+  width: 264px;
+  padding: 0;
+  margin-right: 24px;
+
+}
+.subscribe-action {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .main-box {
+    background-image:linear-gradient(to right, rgba(47, 48, 57, 0.8),
+    rgba(47, 48, 57, 0.8) ),
+    url(../images/people-office-tablet-2x.jpg);
+ }
+}
