@@ -52,9 +52,9 @@
 
   /*----- SECTION MISSION -----*/
   .mission {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
   .mission-title-list {
     display: flex;
     flex-wrap: wrap;
@@ -103,12 +103,12 @@
   }
   /*-----SECTION JOB-----*/
   .job {
-    display: block;
+    display: flex;
     margin-bottom: 120px;
   }
 
   .job-header {
-    margin-bottom: 70px;
+    margin-bottom: 72px;
     text-align: center;
     font-weight: 600;
     font-size: 36px;
@@ -127,17 +127,18 @@
 
   .our-team-title {
     text-align: center;
-    padding-top: 120px;
     margin-bottom: 70px;
+  }
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
   }
   .team-list {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 110px;
-    padding-left: 0;
-    padding-right: 0;
   }
 
   .team-item + .team-item {
@@ -146,8 +147,7 @@
 
   /* =======CUSTOMERS====== */
   .customer {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 120px 156px;
   }
 
   .customer-list {
