@@ -49,14 +49,12 @@ body {
   display: flex;
   align-items: center;
   width: inherit;
-
 }
 .main-nav {
-  display:flex;
+  display: flex;
   margin-right: auto;
   justify-content: space-around;
   align-items: center;
-
 }
 .header-logo,
 .header-web {
@@ -97,60 +95,60 @@ body {
   margin: 0;
   padding: 0;
   align-items: baseline;
-        }
+}
 
-  /* <!--======== HEADER-MODAL =====--> */
+/* <!--======== HEADER-MODAL =====--> */
 
 .menu-list-link {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--main-text-color);
-    }
-    .menu-list-item + .menu-list-item {
-      padding-top: 40px;
-    }
-    .mobile-modal {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) scale(1);
-      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-      padding: 80px 40px 40px 40px;
-    
-      background: var(--modal-background);
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-      border-radius: 4px;
-    }
-    .menu-site-nav {
-      margin-bottom: 185px;
-    }
-    .mobile-auth-nav {
-      display: flex;
-      flex-direction: column;
-    }
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--main-text-color);
+}
+.menu-list-item + .menu-list-item {
+  padding-top: 40px;
+}
+.mobile-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  padding: 80px 40px 40px 40px;
+
+  background: var(--modal-background);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.menu-site-nav {
+  margin-bottom: 185px;
+}
+.mobile-auth-nav {
+  display: flex;
+  flex-direction: column;
+}
 .mobile-tell-numer {
-font-style: normal;
-font-weight: 600;
-font-size: 36px;
-line-height: 1.11;
-text-transform: capitalize;
-color: var(--button-color);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.11;
+  text-transform: capitalize;
+  color: var(--button-color);
 }
 .mobile-tell-item {
-margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 .mobile-mail {
   font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 0.02em;
-color: var(--second-text-color);
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--second-text-color);
 }
 .mobile-social-icon {
   width: 24px;
@@ -159,10 +157,9 @@ color: var(--second-text-color);
 .current-page {
   color: var(--logo-txt-color);
 }
-.mobile-modal  .social-item {
+.mobile-modal .social-item {
   justify-content: left;
   gap: 56px;
- 
 }
 /* =================MAIN BOX============= */
 
@@ -180,7 +177,8 @@ color: var(--second-text-color);
     ),
     url(../images/people-office-mv.jpg);
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .main-title {
   margin-bottom: 72px;
@@ -235,7 +233,7 @@ color: var(--second-text-color);
 
   row-gap: 72px;
 }
- .mission-title {
+.mission-title {
   text-align: center;
   margin-bottom: 8px;
   font-weight: 700;
@@ -299,7 +297,6 @@ color: var(--second-text-color);
   border-radius: 0px 0px 4px 4px;
 }
 
-
 .team-title {
   margin-bottom: 8px;
   font-weight: 500;
@@ -355,7 +352,7 @@ color: var(--second-text-color);
 }
 .customer-list {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: space-between;
 
   row-gap: 72px;
@@ -363,9 +360,7 @@ color: var(--second-text-color);
 
 .customer-item {
   width: calc((100% - 24px) / 2);
-
 }
-
 
 .customer-link {
   display: flex;
@@ -674,7 +669,6 @@ color: var(--second-text-color);
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-
   padding: 72px 24px 24px;
 
   background: var(--modal-background);
@@ -684,24 +678,19 @@ color: var(--second-text-color);
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .mobile-modal {
-  width: 95%;
+    width: 95%;
   }
   .modal {
-  width: 95%;
-      }
-
-
+    width: 95%;
+  }
 }
-@media screen and (min-width: 480px)
-{
+@media screen and (min-width: 480px) {
   .mobile-modal {
-  min-width: 392px;
+    min-width: 392px;
   }
   .modal {
-  min-width: 428px;
-      }
-
-
+    min-width: 428px;
+  }
 }
 
 .modal-close {
