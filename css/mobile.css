@@ -1,12 +1,9 @@
 @media screen and (min-width: 320px) and (max-width: 427px) {
   .container {
-
     width: 320px;
-;
   }
   .main-box {
     width: 320px;
- 
   }
   .mobile-modal {
     width: 290px;
@@ -16,6 +13,9 @@
   }
   .main-title {
     width: 290px;
+  }
+  .subscribe-btn {
+    margin-top: 24px;
   }
 }
 @media screen and (min-width: 428px) and (max-width: 767px) {
@@ -27,5 +27,8 @@
   }
   .main-title {
     width: 319px;
+  }
+  .subscribe-btn {
+    margin-top: 24px;
   }
 }
