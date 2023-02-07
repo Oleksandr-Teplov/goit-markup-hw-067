@@ -1,7 +1,6 @@
 @media screen and (min-width: 768px) {
     .container {
-        /* width: 768px; */
-        max-width: 768px;
+        width: 768px;
       }
 
     .border-btm {
@@ -12,7 +11,9 @@
       div > .mobile-menu, .heder-menu-button {
         display: none;
       }
-
+.navigation {
+  padding: 0;
+}
       
       .header-link {
         font-weight: 600;
@@ -122,6 +123,8 @@
 }
 /*-----SECTION TEAM-----*/
 .team {
+  display: flex;
+  flex-wrap: wrap;
   padding-left: 93px;
   padding-right: 93px;
   padding-bottom: 104px;
@@ -138,12 +141,16 @@
 
       /* =======CUSTOMERS====== */
 .customer {
+  display: flex;
+  flex-wrap: wrap;
   padding: 96px 93px;
 }
 
 .customer-list {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
       } 
 .customer-link {
   width: 168px; 
