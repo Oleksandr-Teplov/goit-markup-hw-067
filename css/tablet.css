@@ -1,207 +1,213 @@
 @media screen and (min-width: 768px) {
-    .container {
-        width: 768px;
-      }
+  .container {
+    width: 768px;
+  }
 
-    .border-btm {
-        border-bottom: 1px solid #e7e9fc;
-        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-          0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-      }
-      div > .mobile-menu, .heder-menu-button {
-        display: none;
-      }
-.navigation {
-  padding: 0;
-}
-      
-      .header-link {
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-      }
-      .header-logo {
-        margin-right: 123px;
-      }
-      .main-nav {
-        margin-right: 86px;
-      }
-      .site-nav {
-        display: flex;
-        text-align: center;
-      }
-      .site-nav .list-link {
-        display: block;
-        padding-top: 24px;
-        padding-bottom: 24px;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-      
-        color: var(--main-text-color);
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      
-      .site-nav .list-item + .list-item {
-        margin-left: 40px;
-      }
+  .border-btm {
+    border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  }
+  div > .mobile-menu,
+  .heder-menu-button {
+    display: none;
+  }
+  .navigation {
+    padding: 0;
+  }
 
-      .auth-nav {
-        display: flex;
-        flex-wrap: wrap;
-      }
-   
-      
-      .list-link:hover,
-      .mail:hover,
-      .mail:focus,
-      .tell-numer:hover,
-      .tell-numer:focus {
-        color: var(--logo-txt-color);
-      }
-      
-      .mail,
-      .tell-numer {
-        font-style: normal;
-        font-size: 12px;
-        line-height: 1.33;
-        letter-spacing: 0.02em;
-        color: var(--second-text-color);
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      
-      .display-current-page {
-        position: relative;
-      }
-      .site-nav .current-page {
-        color: var(--logo-txt-color);
-      }
-      
-      .current-page::after {
-        position: absolute;
-        content: "";
-        width: 100%;
-        height: 4px;
-        left: 0px;
-        bottom: 0px;
-      
-        background: var(--logo-txt-color);
-        border-radius: 2px;
-      }
-      /* =================MAIN BOX============= */
+  .header-link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  .header-logo {
+    margin-right: 123px;
+  }
+  .main-nav {
+    margin-right: 86px;
+  }
+  .site-nav {
+    display: flex;
+    text-align: center;
+  }
+  .site-nav .list-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 
-      .main-box {
-        min-width: 768px;
-        height: 436px;
-        background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url(../images/people-office-tablet.jpg);
-      }
-      .main-title {
-        width: 496px;
+    color: var(--main-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-        font-size: 56px;
-        line-height: 1.07;
-        text-transform:none;
-      }
+  .site-nav .list-item + .list-item {
+    margin-left: 40px;
+  }
 
-/*----- SECTION MISSION -----*/
+  .auth-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
 
+  .list-link:hover,
+  .mail:hover,
+  .mail:focus,
+  .tell-numer:hover,
+  .tell-numer:focus {
+    color: var(--logo-txt-color);
+  }
+
+  .mail,
+  .tell-numer {
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .display-current-page {
+    position: relative;
+  }
+  .site-nav .current-page {
+    color: var(--logo-txt-color);
+  }
+
+  .current-page::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    left: 0px;
+    bottom: 0px;
+
+    background: var(--logo-txt-color);
+    border-radius: 2px;
+  }
+
+  /*============ MODAL========== */
+  .modal {
+    width: 408px;
+  }
+  /* =================MAIN BOX============= */
+
+  .main-box {
+    min-width: 768px;
+    height: 436px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-tablet.jpg);
+  }
+  .main-title {
+    width: 496px;
+
+    font-size: 56px;
+    line-height: 1.07;
+    text-transform: none;
+  }
+
+  /*----- SECTION MISSION -----*/
 
   .mission-item {
-      text-align: left;
-    width: calc((100% - 16px) / 2);
+    text-align: left;
+    width: calc((100% - 24px) / 2);
   }
 
-.mission-title {
- text-align: left;
+  .mission-title {
+    text-align: left;
+  }
 
-}
-/*-----SECTION TEAM-----*/
-.team {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 93px;
-  padding-right: 93px;
-  padding-bottom: 104px;
-}
-.team-list {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .mission-title-list {
+      column-gap: 24px;
+    }
+  }
+  /*-----SECTION TEAM-----*/
+  .team {
     display: flex;
-    flex-direction:row;
     flex-wrap: wrap;
-    justify-content:space-between;
+    padding-left: 93px;
+    padding-right: 93px;
+    padding-bottom: 104px;
+  }
+  .team-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     row-gap: 64px;
-
   }
 
+  /* =======CUSTOMERS====== */
+  .customer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 96px 93px;
+  }
 
-      /* =======CUSTOMERS====== */
-.customer {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 96px 93px;
-}
+  .customer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: center; */
+  }
+  .customer-link {
+    width: 168px;
+  }
+  .customer-item {
+    width: calc((100% - 48px) / 3);
+  }
 
-.customer-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  /* align-items: center; */
-      } 
-.customer-link {
-  width: 168px; 
-      }
-.customer-item {
-  width: calc((100% - 48px) / 3);
-      }
+  /* ----FOOTER---- */
 
-/* ----FOOTER---- */
+  .media-box {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 93px;
+    padding-right: 93px;
+  }
 
-
-.media-box {
-  text-align: left;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  padding-left: 93px;
-  padding-right: 93px;
-}
-
-.social-media {
-  margin: 0 0 0 24px;
-}
-.media-title {
-
-  text-align: left;
-}
-.subscribe {
-  margin-top: 72px;
-  margin-left: 0;
-}
-.subscribe-input {
-  width: 264px;
-  margin-right: 24px;
-
-}
-.subscribe-action {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-
-
+  .social-media {
+    margin: 0 0 0 24px;
+  }
+  .media-title {
+    text-align: left;
+  }
+  .subscribe {
+    margin-top: 72px;
+    margin-left: 0;
+  }
+  .subscribe-input {
+    width: 264px;
+    margin-right: 24px;
+  }
+  .subscribe-action {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-screen and (min-resolution: 192dpi) and (min-width: 768px),
-screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .main-box {
-    background-image:linear-gradient(to right, rgba(47, 48, 57, 0.8),
-    rgba(47, 48, 57, 0.8) ),
-    url(../images/people-office-tablet-2x.jpg);
- }
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 57, 0.8),
+        rgba(47, 48, 57, 0.8)
+      ),
+      url(../images/people-office-tablet-2x.jpg);
+  }
 }
